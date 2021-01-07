@@ -9,12 +9,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: TopBar(),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.max,
+        body: ListView(
+          padding: const EdgeInsets.all(0),
           children: [
-            YoutubePost(),
-            YoutubePost(),
             YoutubePost(),
           ],
         ));

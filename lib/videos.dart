@@ -5,7 +5,7 @@ class Videos {
   String views;
   String date;
   String title;
-  String channel_name;
+  String channelName;
 
-  Videos(this.thumbnail, this.views, this.date, this.title, this.channel_name);
+  Videos(this.thumbnail, this.views, this.date, this.title, this.channelName);
 }

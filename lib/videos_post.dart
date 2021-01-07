@@ -14,38 +14,43 @@ class YoutubePost extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.all(10.0),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Image.network(
-                  'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')
-            ],
-          ),
-          Row(
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisSize: MainAxisSize.max,
+      children: [
+        Container(
+            child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Image.network(
+                'https://i.ytimg.com/an_webp/XTlWNWeencw/mqdefault_6s.webp?du=3000&sqp=CJzQ2f8F&rs=AOn4CLAkujWmUd6vKTCwagvq-lSrMs7deA')
+          ],
+        )),
+        Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.max,
             children: [
               Column(
-                children: [Icon(Icons.account_circle_rounded)],
+                children: [
+                  Icon(Icons.account_circle_rounded),
+                ],
               ),
               Column(
                 children: [
                   Row(
-                    children: [Text('LA LAKERS VS MEMPHIS GRIZZLIES')],
+                    mainAxisSize: MainAxisSize.max,
+                    children: [Text('Children')],
                   ),
                   Row(
-                    children: [Text('NBA')],
-                  ),
-                  Row(
-                    children: [Text('697K Views * 5 Hours Ago')],
+                    children: [Text('Star Wars * 82K Views * 17 Hours Ago')],
                   )
                 ],
-              ),
+              )
             ],
-          )
-        ],
-      ),
+          ),
+        )
+      ],
     );
   }
 }
