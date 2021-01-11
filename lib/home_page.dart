@@ -9,11 +9,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: TopBar(),
-        body: ListView(
-          padding: const EdgeInsets.all(0),
-          children: [
-            YoutubePost(),
-          ],
-        ));
+        body: Column(children: [
+          Center(
+            child: YoutubePost(),
+          )
+        ]));
   }
 }
