@@ -10,11 +10,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         appBar: TopBar(),
         body: Column(children: [
-          Container(
-            margin: EdgeInsets.only(top: 100),
-            child: Center(
-              child: YoutubePost(),
-            ),
+          Center(
+            child: YoutubePost(),
           )
         ]));
   }
