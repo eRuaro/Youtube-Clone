@@ -27,46 +27,45 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
+  HomePage({Key key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // No appBar property provided, only the body.
-      body: CustomScrollView(
-        // Add the app bar and list of items as slivers in the next steps.
-        slivers: <Widget>[
-          SliverAppBar(
-            title: Text(
-              'Youtube Clone',
-            ),
-            floating: true,
-            expandedHeight: 20,
-            actions: [
-              IconButton(icon: Icon(Icons.monitor), onPressed: null),
-              IconButton(icon: Icon(Icons.notifications), onPressed: null),
-              IconButton(
-                icon: Icon(Icons.search),
-                onPressed: null,
-                color: Colors.white,
-              ),
-              IconButton(
-                  icon: Icon(Icons.account_circle_rounded), onPressed: null),
-            ],
+      appBar: AppBar(
+        title: Text(
+          'Youtube Clone',
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.monitor),
+            onPressed: null,
           ),
-          SliverList(
-            // Use a delegate to build items as they're scrolled on screen.
-            delegate: SliverChildBuilderDelegate(
-              // The builder function returns a ListTile with a title that
-              // displays the index of the current item.
-              (context, index) => ListView(
-                children: [
-                  Center(),
-                ],
-              ),
-              // Builds 1000 ListTiles
-              childCount: 1000,
-            ),
-          )
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: null,
+          ),
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: null,
+            color: Colors.white,
+          ),
+          IconButton(
+            icon: Icon(Icons.account_circle_rounded),
+            onPressed: null,
+          ),
         ],
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              child: Image.network(
+                'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IO2MvrG7m1-23Q3wPtMKSAHaEK%26pid%3DApi%26h%3D160&f=1',
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
