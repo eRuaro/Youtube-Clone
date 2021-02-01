@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:outline_material_icons/outline_material_icons.dart';
 
 void main() {
   runApp(MyApp());
@@ -56,16 +55,38 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Center(
-        child: Column(
-          children: [
-            Container(
-              child: Image.network(
-                'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.IO2MvrG7m1-23Q3wPtMKSAHaEK%26pid%3DApi%26h%3D160&f=1',
+      body: Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: 189,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/svt.png'),
+                fit: BoxFit.cover,
               ),
             ),
-          ],
-        ),
+          ),
+          Container(
+            height: 189,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/svt.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+          Container(
+            height: 189,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('images/svt.png'),
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
