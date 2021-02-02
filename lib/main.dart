@@ -57,7 +57,6 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         mainAxisSize: MainAxisSize.max,
-        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
             height: 189,
@@ -69,6 +68,57 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(
+            height: 100,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.account_circle_rounded,
+                      size: 48,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      child: Text(
+                        '[Dance Practice] SEVENTEEN\n Left & Right',
+                        style: TextStyle(
+                          fontSize: 26,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                      child: Text(
+                        'Seventeen • 11M Views • 7 months ago',
+                        style: TextStyle(
+                          fontSize: 19,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
             height: 189,
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -78,12 +128,51 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Container(
-            height: 189,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage('images/svt.png'),
-                fit: BoxFit.cover,
-              ),
+            height: 100,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(
+                      Icons.account_circle_rounded,
+                      size: 48,
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  width: 10,
+                ),
+                Column(
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                      child: Text(
+                        '[Dance Practice] SEVENTEEN\n Left & Right',
+                        style: TextStyle(
+                          fontSize: 26,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Container(
+                      child: Text(
+                        'Seventeen • 11M Views • 7 months ago',
+                        style: TextStyle(
+                          fontSize: 19,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         ],
