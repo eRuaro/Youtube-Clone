@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.0
   font_awesome_flutter: ^8.11.0
+  material: ^1.0.0+1
+  outline_material_icons: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -34,8 +36,8 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
-  assets: 
-    - lib/images/
+  assets:
+    - images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
